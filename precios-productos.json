@@ -1,0 +1,45 @@
+{
+  "moneda": "CRC",
+  "productos": [
+    {
+      "nombre": "Taza 400 ml sublimable",
+      "precio": 5500,
+      "precio_formateado": "₡5,500"
+    },
+    {
+      "nombre": "Promoción 2x1 medias personalizadas",
+      "precio": 9900,
+      "precio_formateado": "₡9,900"
+    },
+    {
+      "nombre": "Botella blanca 600 ml con tapa y pajilla de metal",
+      "precio": 14900,
+      "precio_formateado": "₡14,900"
+    },
+    {
+      "nombre": "Portarretrato con luz personalizado",
+      "precio": 14900,
+      "precio_formateado": "₡14,900"
+    },
+    {
+      "nombre": "Taza mágica 400 ml personalizada",
+      "precio": 5500,
+      "precio_formateado": "₡5,500"
+    },
+    {
+      "nombre": "Llavero de corazón personalizado",
+      "precio": 3900,
+      "precio_formateado": "₡3,900"
+    },
+    {
+      "nombre": "Llavero cuadrado personalizado",
+      "precio": 3900,
+      "precio_formateado": "₡3,900"
+    },
+    {
+      "nombre": "Almohada blanca personalizada",
+      "precio": 9900,
+      "precio_formateado": "₡9,900"
+    }
+  ]
+}
