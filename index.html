@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solant Regalos Personalizados</title>
+    <title>SOLANT | Regalos Personalizados</title>
     <meta
       name="description"
-      content="Regalos personalizados premium en Mall San Pedro. Pedidos por WhatsApp y pago por SINPE Móvil."
+      content="Regalos personalizados premium en Costa Rica. Pedidos por WhatsApp con pago por SINPE Móvil."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,160 +19,248 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#inicio">Solant</a>
-        <nav class="nav-links" aria-label="Navegación principal">
+        <a class="logo" href="#inicio" aria-label="Ir al inicio de Solant">SOLANT</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          Menú
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
           <a href="#categorias">Categorías</a>
           <a href="#destacados">Destacados</a>
           <a href="#pedido">Cómo pedir</a>
           <a href="#ubicacion">Ubicación</a>
           <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
         </nav>
-        <a class="btn btn-small" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
+
+        <a class="btn btn-small" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">
+          WhatsApp
+        </a>
       </div>
     </header>
 
     <main id="inicio">
       <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="tag">Regalos personalizados premium</p>
-            <h1>Detalles únicos para momentos inolvidables</h1>
-            <p class="hero-copy">
-              Diseñamos regalos que destacan por su acabado y presentación. Escríbenos por
-              WhatsApp para cotizar, personalizar y coordinar tu pedido.
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="kicker">Regalos personalizados con alma</p>
+            <h1>
+              Haz que cada detalle diga
+              <span>“pensé en ti”</span>
+            </h1>
+            <p>
+              En SOLANT creamos regalos únicos para cumpleaños, pareja, mascotas, recuerdos y
+              momentos que merecen algo especial.
             </p>
             <div class="hero-actions">
-              <a class="btn" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">Cotizar ahora</a>
-              <a class="btn btn-outline" href="#pedido">Cómo funciona</a>
+              <a class="btn" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">
+                Pedir por WhatsApp
+              </a>
+              <a class="btn btn-ghost" href="#destacados">Ver productos</a>
             </div>
-            <p class="sinpe-note">
-              También puedes pagar por <strong>SINPE Móvil: 64848874</strong>
-              (a nombre de <strong>Magnet SRL</strong>).
-            </p>
+            <p class="hero-note">SINPE Móvil: 64848874 · Magnet SRL</p>
           </div>
-          <div class="hero-card" aria-hidden="true">
-            <h2>Solant</h2>
-            <p>Diseño, personalización y entrega con estilo.</p>
-            <ul>
-              <li>Grabado y personalización</li>
-              <li>Presentación elegante</li>
-              <li>Atención rápida por WhatsApp</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
-      <section id="categorias" class="section">
-        <div class="container">
-          <h2>Categorías</h2>
-          <div class="grid cards-3">
-            <article class="card">
-              <h3>Tazas y termos</h3>
-              <p>Diseños personalizados para oficina, hogar y ocasiones especiales.</p>
+          <div class="hero-collage" aria-hidden="true">
+            <article class="tile tile-a">
+              <p>Tazas</p>
             </article>
-            <article class="card">
-              <h3>Llaveros y accesorios</h3>
-              <p>Regalos compactos, prácticos y con acabado profesional.</p>
+            <article class="tile tile-b">
+              <p>Medias</p>
             </article>
-            <article class="card">
-              <h3>Detalles para eventos</h3>
-              <p>Souvenirs, regalos corporativos y recuerdos personalizados.</p>
+            <article class="tile tile-c">
+              <p>Mascotas</p>
+            </article>
+            <article class="tile tile-d">
+              <p>Llaveros</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="destacados" class="section section-alt">
+      <section class="section discover" id="categorias">
         <div class="container">
-          <h2>Productos destacados</h2>
-          <div class="grid cards-4">
+          <header class="section-head">
+            <p class="eyebrow">Descubre por categoría</p>
+            <h2>Encuentra el regalo ideal en segundos</h2>
+          </header>
+
+          <div class="category-grid">
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20tazas" target="_blank" rel="noreferrer"><span>Tazas</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20medias" target="_blank" rel="noreferrer"><span>Medias</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20botellas" target="_blank" rel="noreferrer"><span>Botellas</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20llaveros" target="_blank" rel="noreferrer"><span>Llaveros</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20bolsos" target="_blank" rel="noreferrer"><span>Bolsos</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20regalos%20para%20mascotas" target="_blank" rel="noreferrer"><span>Regalos para mascotas</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20opciones%20de%20detalles%20para%20pareja" target="_blank" rel="noreferrer"><span>Detalles para pareja</span></a>
+            <a class="category-card" href="https://wa.me/50664848874?text=Hola%2C%20quiero%20ver%20otros%20productos%20del%20cat%C3%A1logo" target="_blank" rel="noreferrer"><span>Otros productos</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="destacados">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Favoritos del momento</p>
+            <h2>Productos destacados</h2>
+          </header>
+
+          <div class="products-grid">
             <article class="product-card">
+              <div class="product-image image-1" aria-hidden="true"></div>
               <h3>Taza personalizada</h3>
-              <p>Ideal para regalos de cumpleaños o empresa.</p>
+              <p>Diseño con nombre, fecha o frase especial.</p>
               <p class="price">Desde ₡4,500</p>
+              <a href="https://wa.me/50664848874?text=Hola%2C%20quiero%20pedir%20una%20taza%20personalizada" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
             </article>
+
             <article class="product-card">
-              <h3>Termo grabado</h3>
-              <p>Acabado premium con nombre o logo.</p>
+              <div class="product-image image-2" aria-hidden="true"></div>
+              <h3>Media personalizada</h3>
+              <p>Perfecta para regalos divertidos y emotivos.</p>
+              <p class="price">Consultar precio</p>
+              <a href="https://wa.me/50664848874?text=Hola%2C%20quiero%20pedir%20medias%20personalizadas" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image image-3" aria-hidden="true"></div>
+              <h3>Botella premium</h3>
+              <p>Ideal para uso diario con estilo personalizado.</p>
               <p class="price">Desde ₡8,900</p>
+              <a href="https://wa.me/50664848874?text=Hola%2C%20quiero%20pedir%20una%20botella%20premium" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
             </article>
+
             <article class="product-card">
-              <h3>Llavero acrílico</h3>
-              <p>Detalles únicos para obsequios y eventos.</p>
+              <div class="product-image image-4" aria-hidden="true"></div>
+              <h3>Llavero personalizado</h3>
+              <p>Pequeño, elegante y con significado especial.</p>
               <p class="price">Desde ₡2,500</p>
-            </article>
-            <article class="product-card">
-              <h3>Combo personalizado</h3>
-              <p>Arma un set especial según tu presupuesto.</p>
-              <p class="price">Cotización por WhatsApp</p>
+              <a href="https://wa.me/50664848874?text=Hola%2C%20quiero%20pedir%20un%20llavero%20personalizado" target="_blank" rel="noreferrer">Pedir por WhatsApp</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="pedido" class="section">
-        <div class="container">
-          <h2>Cómo hacer tu pedido</h2>
-          <ol class="steps">
-            <li>Escríbenos por WhatsApp con la idea o producto que deseas.</li>
-            <li>Te enviamos opciones, precio y tiempo de entrega.</li>
-            <li>Confirmas tu pedido y realizas el pago (SINPE Móvil o en tienda).</li>
-            <li>Retiras en tienda o coordinamos la entrega.</li>
-          </ol>
+      <section class="section section-soft" id="pedido">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Rápido y fácil</p>
+            <h2>Cómo hacer tu pedido</h2>
+            <ol class="steps">
+              <li>Elige el producto que te gusta.</li>
+              <li>Envíanos tu foto, idea o texto por WhatsApp.</li>
+              <li>Confirmamos diseño, precio y tiempo de entrega.</li>
+              <li>Paga por SINPE Móvil al <strong>64848874</strong> (Magnet SRL).</li>
+              <li>Retira en tienda o coordinamos entrega.</li>
+            </ol>
+          </div>
+          <aside class="pay-card">
+            <h3>Datos de pago</h3>
+            <p><strong>SINPE Móvil:</strong> 64848874</p>
+            <p><strong>Nombre:</strong> Magnet SRL</p>
+            <a class="btn" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">Enviar comprobante</a>
+          </aside>
         </div>
       </section>
 
-      <section id="ubicacion" class="section section-alt">
-        <div class="container info-grid">
-          <div class="card">
+      <section class="section value-section">
+        <div class="container">
+          <header class="section-head center">
+            <p class="eyebrow">El valor de regalar bonito</p>
+            <h2>Regalos únicos, personalizados con amor</h2>
+          </header>
+          <div class="value-grid">
+            <article>
+              <h3>Hechos para emocionar</h3>
+              <p>Convertimos tus recuerdos en detalles que se sienten personales y auténticos.</p>
+            </article>
+            <article>
+              <h3>Para cada ocasión</h3>
+              <p>Desde cumpleaños hasta sorpresas para pareja, mascotas o momentos especiales.</p>
+            </article>
+            <article>
+              <h3>Atención cercana</h3>
+              <p>Te guiamos paso a paso por WhatsApp para que el resultado quede tal como lo imaginas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="ubicacion">
+        <div class="container location-grid">
+          <article class="info-card">
             <h2>Ubicación</h2>
             <p>Mall San Pedro, primer piso, frente a Retoucherie.</p>
-            <a class="text-link" href="https://maps.google.com/?q=Mall+San+Pedro" target="_blank" rel="noreferrer">Ver en mapa</a>
-          </div>
-          <div class="card">
+            <a href="https://maps.google.com/?q=Mall+San+Pedro" target="_blank" rel="noreferrer">Abrir en Google Maps</a>
+          </article>
+          <article class="info-card">
             <h2>Horario</h2>
             <p>Martes a sábado</p>
             <p><strong>10:00 a.m. a 7:00 p.m.</strong></p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="info-card" id="contacto">
             <h2>Contacto</h2>
-            <p>WhatsApp: <a class="text-link" href="https://wa.me/50664848874" target="_blank" rel="noreferrer">64848874</a></p>
+            <p>WhatsApp: 64848874</p>
             <p>SINPE Móvil: 64848874</p>
-          </div>
+            <a href="https://wa.me/50664848874" target="_blank" rel="noreferrer">Hablar ahora</a>
+          </article>
         </div>
       </section>
 
-      <section id="faq" class="section">
-        <div class="container">
-          <h2>Preguntas frecuentes</h2>
+      <section class="section" id="faq">
+        <div class="container faq-wrap">
+          <header class="section-head">
+            <p class="eyebrow">Preguntas frecuentes</p>
+            <h2>Todo lo que necesitas saber antes de pedir</h2>
+          </header>
           <div class="faq-list">
             <details>
+              <summary>¿Cómo puedo ordenar?</summary>
+              <p>Nos escribes por WhatsApp, eliges producto, compartes tu idea y confirmamos todo contigo.</p>
+            </details>
+            <details>
               <summary>¿Cuánto duran en entregar?</summary>
-              <p>Depende del producto y la personalización. Te confirmamos el tiempo exacto por WhatsApp.</p>
+              <p>Depende del tipo de personalización y cantidad. Siempre te damos el tiempo estimado antes de pagar.</p>
             </details>
             <details>
-              <summary>¿Puedo pedir varias unidades para empresa o evento?</summary>
-              <p>Sí. Manejamos pedidos por volumen y te compartimos cotización personalizada.</p>
+              <summary>¿Aceptan fotos o diseños propios?</summary>
+              <p>Sí. Puedes enviar foto, frase o referencia y te ayudamos a adaptarlo para que se vea increíble.</p>
             </details>
             <details>
-              <summary>¿Qué métodos de pago aceptan?</summary>
-              <p>Pago por SINPE Móvil al 64848874 (Magnet SRL) o pago directo en tienda.</p>
+              <summary>¿Cómo se paga?</summary>
+              <p>Por SINPE Móvil al 64848874 (Magnet SRL) o coordinando directamente en tienda.</p>
             </details>
             <details>
-              <summary>¿Puedo llevar mi propio diseño?</summary>
-              <p>Claro. Si el archivo tiene buena resolución, podemos trabajar con tu diseño.</p>
+              <summary>¿Dónde están ubicados?</summary>
+              <p>En Mall San Pedro, primer piso, frente a Retoucherie.</p>
             </details>
           </div>
         </div>
       </section>
     </main>
 
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">SOLANT Regalos Personalizados</p>
+          <p>Regalos emocionales y personalizados para momentos inolvidables.</p>
+        </div>
+        <div>
+          <p><strong>WhatsApp:</strong> 64848874</p>
+          <p><strong>Horario:</strong> martes a sábado, 10 a.m. a 7 p.m.</p>
+          <p><strong>Ubicación:</strong> Mall San Pedro, primer piso, frente a Retoucherie.</p>
+        </div>
+      </div>
+    </footer>
+
     <a
       class="whatsapp-float"
       href="https://wa.me/50664848874"
       target="_blank"
       rel="noreferrer"
-      aria-label="Contactar por WhatsApp"
+      aria-label="Abrir chat de WhatsApp"
     >
       WhatsApp
     </a>
